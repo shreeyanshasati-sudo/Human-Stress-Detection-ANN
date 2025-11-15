@@ -1,52 +1,56 @@
-🐱🐶 Cat vs Dog Classification using CNN
+Cat vs Dog Classification using CNN
+========================================
 
-A deep learning mini-project that classifies images of cats and dogs using a custom Convolutional Neural Network (CNN), achieving 92%+ accuracy on test data.
+This mini project focuses on classifying images of cats and dogs using a Convolutional Neural Network (CNN) built with TensorFlow and Keras. The model is trained on 3000+ images and achieves 92%+ accuracy, making it capable of predicting any cat or dog image with high reliability.
 
-📌 Project Overview
+----------------------------------------
+Project Overview
+----------------------------------------
+- Used a dataset of 3000+ labeled cat and dog images
+- Applied image preprocessing and augmentation
+- Built a custom CNN architecture (Conv2D, MaxPooling, Dropout, Dense layers)
+- Trained using Adam optimizer and categorical cross-entropy
+- Achieved 92%+ test accuracy
+- Added a prediction script for custom image classification
 
-This project demonstrates an end-to-end image classification workflow using CNNs.
-The model is trained on a dataset of 3000+ images of cats and dogs and is capable of predicting any new cat or dog image with high confidence.
+----------------------------------------
+Tech Stack
+----------------------------------------
+Python | TensorFlow/Keras | NumPy | Pandas | Matplotlib | OpenCV | Jupyter Notebook
 
-🚀 Features
+----------------------------------------
+Model Performance
+----------------------------------------
+- Accuracy: 92%+
+- Works across different breeds, lighting conditions, and angles
+- Robust predictions on real-world images
 
-Custom-built CNN architecture using TensorFlow/Keras
+----------------------------------------
+Model Architecture
+----------------------------------------
+- Multiple Convolutional + MaxPooling layers
+- Dropout for overfitting reduction
+- Dense layers with ReLU activation
+- Softmax output layer for 2-class classification
 
-Image preprocessing and augmentation
+----------------------------------------
+Files Included
+----------------------------------------
+- cat_vs_dog.ipynb — Main notebook
+- dataset/ — Cat & dog dataset (or download link)
+- prediction.py — Script for predicting new images
+- requirements.txt — Dependencies
 
-Achieved 92%+ test accuracy
+----------------------------------------
+How to Run
+----------------------------------------
+pip install -r requirements.txt
+jupyter notebook "cat_vs_dog.ipynb"
 
-Accepts any external cat or dog image for prediction
+To predict your own image:
+python prediction.py --image your_image.jpg
 
-Clean, easy-to-understand training pipeline
-
-Well-structured notebooks and modular code
-
-🧠 Model Architecture
-
-Convolutional + MaxPooling layers
-
-Dropout for regularization
-
-Fully connected dense layers
-
-Adam optimizer + categorical crossentropy loss
-
-📂 Dataset
-
-Contains 3000+ labeled images of cats and dogs
-
-Proper train/test split
-
-Includes augmentation for better generalization
-
-🛠️ Tech Stack
-
-Python, TensorFlow/Keras, NumPy, Pandas, Matplotlib, OpenCV, Jupyter Notebook
-
-🧪 Results
-
-92%+ accuracy on the test dataset
-
-Strong performance on images with different lighting, breeds & angles
-
-Reliable predictions on custom inputs
+----------------------------------------
+Author
+----------------------------------------
+Shreeyansh Asati
